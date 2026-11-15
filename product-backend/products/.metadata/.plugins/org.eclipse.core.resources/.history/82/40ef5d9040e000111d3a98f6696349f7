@@ -1,0 +1,5 @@
+package com.mbb.gtd.cards.assigment.repository;
+
+public interface ProductRepository {
+
+}

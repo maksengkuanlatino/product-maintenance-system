@@ -1,0 +1,10 @@
+spring.application.name=assignment
+
+# Database Connection (Windows Authentication)
+spring.datasource.url=jdbc:sqlserver://localhost:1433;instanceName=SQLEXPRESS;databaseName=TESTDB;encrypt=true;trustServerCertificate=true;integratedSecurity=true;
+spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+# Hibernate & JPA Settings
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.database-platform=org.hibernate.dialect.SQLServerDialect

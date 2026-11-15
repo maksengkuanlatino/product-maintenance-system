@@ -1,0 +1,65 @@
+package com.mbb.gtd.cards.assigment.controller;
+
+import com.mbb.gtd.cards.assigment.model.Product;
+import com.mbb.gtd.cards.assigment.service.ProductService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import java.util.Optional;
+
+@RestController
+@RequestMapping("/api/products")
+public class ProductController {
+	@Autowired
+    private ProductService productService;
+	
+	// 1. Get paginated products (Default: page 0, size 10)
+    @GetMapping
+    public Page<Product> getAllProducts(
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "10") int size) {
+        return productService.getProducts(page, size);
+    }
+
+    // 2. Get product by ID
+    @GetMapping("/{id}")
+    public ResponseEntity<Product> getProductById(@PathVariable Long id) {
+        Optional<Product> product = productService.getProductById(id);
+        return product.map(ResponseEntity::ok)
+                      .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
+    // 3. Create a new product
+    @PostMapping
+    public Product createProduct(@RequestBody Product product) {
+        return productService.saveProduct(product);
+    }
+
+    // 4. Update an existing product
+    @PutMapping("/{id}")
+    public ResponseEntity<Product> updateProduct(@PathVariable Long id, @RequestBody Product productDetails) {
+        Optional<Product> optionalProduct = productService.getProductById(id);
+        if (optionalProduct.isPresent()) {
+            Product product = optionalProduct.get();
+            product.setName(productDetails.getName());
+            product.setDescription(productDetails.getDescription());
+            product.setPrice(productDetails.getPrice());
+            product.setQuantity(productDetails.getQuantity());
+            return ResponseEntity.ok(productService.saveProduct(product));
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+    // 5. Delete a product
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteProduct(@PathVariable Long id) {
+        if (productService.getProductById(id).isPresent()) {
+            productService.deleteProduct(id);
+            return ResponseEntity.ok().build();
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
+}

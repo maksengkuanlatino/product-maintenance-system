@@ -1,0 +1,185 @@
+2026-11-15T21:05:52.303+08:00  INFO 45824 --- [assignment] [restartedMain] c.m.g.c.assigment.AssigmentApplication   : Starting AssigmentApplication using Java 17.0.19 with PID 45824 (C:\Users\Mak Dev Env\product-backend\products\assigment\target\classes started by Mak Dev Env in C:\Users\Mak Dev Env\product-backend\products\assigment)
+2026-11-15T21:05:52.304+08:00  INFO 45824 --- [assignment] [restartedMain] c.m.g.c.assigment.AssigmentApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-11-15T21:05:52.387+08:00  INFO 45824 --- [assignment] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-15T21:05:52.395+08:00  INFO 45824 --- [assignment] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2026-11-15T21:05:52.440+08:00  INFO 45824 --- [assignment] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-11-15T21:05:52.442+08:00  INFO 45824 --- [assignment] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-15T21:05:52.442+08:00  INFO 45824 --- [assignment] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-15T21:05:52.457+08:00  INFO 45824 --- [assignment] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 151 ms
+2026-11-15T21:05:52.474+08:00  INFO 45824 --- [assignment] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-15T21:05:52.496+08:00  INFO 45824 --- [assignment] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-15T21:05:52.497+08:00  INFO 45824 --- [assignment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2026-11-15T21:05:52.655+08:00  INFO 45824 --- [assignment] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Added connection ConnectionID:192 ClientConnectionId: b68a3236-9f7c-457f-8a9a-5e6ec4673dc6
+2026-11-15T21:05:52.655+08:00  INFO 45824 --- [assignment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2026-11-15T21:05:52.685+08:00  WARN 45824 --- [assignment] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: SQLServerDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-15T21:05:52.686+08:00  INFO 45824 --- [assignment] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:sqlserver://localhost:1433;concatNullYieldsNull=ON;quotedIdentifier=ON;connectRetryInterval=10;connectRetryCount=1;maxResultBuffer=-1;sendTemporalDataTypesAsStringForBulkCopy=true;delayLoadingLobs=true;useFmtOnly=false;vectorTypeSupport=v1;cacheBulkCopyMetadata=false;bulkCopyForBatchInsertAllowEncryptedValueModifications=false;bulkCopyForBatchInsertTableLock=false;bulkCopyForBatchInsertKeepNulls=false;bulkCopyForBatchInsertKeepIdentity=false;bulkCopyForBatchInsertFireTriggers=false;bulkCopyForBatchInsertCheckConstraints=false;bulkCopyForBatchInsertBatchSize=0;useBulkCopyForBatchInsert=false;cancelQueryTimeout=-1;sslProtocol=TLS;calcBigDecimalPrecision=false;useDefaultJaasConfig=false;jaasConfigurationName=SQLJDBCDriver;statementPoolingCacheSize=0;serverPreparedStatementDiscardThreshold=10;enablePrepareOnFirstPreparedStatementCall=false;fips=false;socketTimeout=0;authentication=NotSpecified;authenticationScheme=nativeAuthentication;xopenStates=false;datetimeParameterType=datetime2;sendTimeAsDatetime=true;replication=false;trustStoreType=JKS;trustServerCertificate=true;TransparentNetworkIPResolution=true;iPAddressPreference=IPv4First;serverNameAsACE=false;sendStringParametersAsUnicode=true;selectMethod=direct;responseBuffering=adaptive;queryTimeout=-1;packetSize=8000;multiSubnetFailover=false;loginTimeout=30;lockTimeout=-1;lastUpdateCount=true;useDefaultGSSCredential=false;prepareMethod=prepexec;encrypt=true;disableStatementPooling=true;databaseName=TESTDB;columnEncryptionSetting=Disabled;applicationName=Microsoft JDBC Driver for SQL Server;applicationIntent=readwrite;]
+	Database driver: Microsoft JDBC Driver 13.4 for SQL Server
+	Database dialect: SQLServerDialect
+	Database version: 17.0
+	Default catalog/schema: TESTDB/dbo
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 128
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-15T21:05:52.712+08:00  INFO 45824 --- [assignment] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-15T21:05:53.027+08:00  INFO 45824 --- [assignment] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-15T21:05:53.067+08:00  WARN 45824 --- [assignment] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-11-15T21:05:53.105+08:00  INFO 45824 --- [assignment] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-11-15T21:05:53.107+08:00  INFO 45824 --- [assignment] [restartedMain] c.m.g.c.assigment.AssigmentApplication   : Started AssigmentApplication in 0.849 seconds (process running for 18362.848)
+2026-11-15T21:05:53.108+08:00  INFO 45824 --- [assignment] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-11-15T21:06:56.240+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-15T21:06:56.240+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-15T21:06:56.241+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-11-15T21:06:56.241+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-1] c.m.g.c.a.c.RequestResponseLoggingFilter : --> REQUEST: Method: GET, URI: /api/products
+2026-11-15T21:06:56.275+08:00  WARN 45824 --- [assignment] [http-nio-8080-exec-1] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-11-15T21:06:56.284+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-1] c.m.g.c.a.c.RequestResponseLoggingFilter : <-- RESPONSE: Status: 200
+2026-11-15T21:06:56.287+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-2] c.m.g.c.a.c.RequestResponseLoggingFilter : --> REQUEST: Method: GET, URI: /api/products
+2026-11-15T21:06:56.296+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-2] c.m.g.c.a.c.RequestResponseLoggingFilter : <-- RESPONSE: Status: 200
+2026-11-15T21:09:01.265+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-5] c.m.g.c.a.c.RequestResponseLoggingFilter : --> REQUEST: Method: GET, URI: /api/products
+2026-11-15T21:09:01.283+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-5] c.m.g.c.a.c.RequestResponseLoggingFilter : <-- RESPONSE: Status: 200
+2026-11-15T21:09:01.285+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-6] c.m.g.c.a.c.RequestResponseLoggingFilter : --> REQUEST: Method: GET, URI: /api/products
+2026-11-15T21:09:01.292+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-6] c.m.g.c.a.c.RequestResponseLoggingFilter : <-- RESPONSE: Status: 200
+2026-11-15T21:12:26.936+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-9] c.m.g.c.a.c.RequestResponseLoggingFilter : --> REQUEST: Method: GET, URI: /api/products
+2026-11-15T21:12:26.958+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-9] c.m.g.c.a.c.RequestResponseLoggingFilter : <-- RESPONSE: Status: 200
+2026-11-15T21:12:26.961+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-10] c.m.g.c.a.c.RequestResponseLoggingFilter : --> REQUEST: Method: GET, URI: /api/products
+2026-11-15T21:12:26.972+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-10] c.m.g.c.a.c.RequestResponseLoggingFilter : <-- RESPONSE: Status: 200
+2026-11-15T21:13:47.792+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-3] c.m.g.c.a.c.RequestResponseLoggingFilter : --> REQUEST: Method: GET, URI: /api/products
+2026-11-15T21:13:47.868+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-3] c.m.g.c.a.c.RequestResponseLoggingFilter : <-- RESPONSE: Status: 200
+2026-11-15T21:20:22.863+08:00  INFO 45824 --- [assignment] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-11-15T21:20:22.864+08:00  INFO 45824 --- [assignment] [Thread-47] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-15T21:20:22.911+08:00  INFO 45824 --- [assignment] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-11-15T21:20:22.912+08:00  INFO 45824 --- [assignment] [Thread-47] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-11-15T21:20:22.912+08:00  INFO 45824 --- [assignment] [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2026-11-15T21:20:22.914+08:00  INFO 45824 --- [assignment] [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2026-11-15T21:20:22.990+08:00  INFO 45824 --- [assignment] [restartedMain] c.m.g.c.assigment.AssigmentApplication   : Starting AssigmentApplication using Java 17.0.19 with PID 45824 (C:\Users\Mak Dev Env\product-backend\products\assigment\target\classes started by Mak Dev Env in C:\Users\Mak Dev Env\product-backend\products\assigment)
+2026-11-15T21:20:22.990+08:00  INFO 45824 --- [assignment] [restartedMain] c.m.g.c.assigment.AssigmentApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-11-15T21:20:23.084+08:00  INFO 45824 --- [assignment] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-15T21:20:23.094+08:00  INFO 45824 --- [assignment] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2026-11-15T21:20:23.134+08:00  INFO 45824 --- [assignment] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-11-15T21:20:23.135+08:00  INFO 45824 --- [assignment] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-15T21:20:23.135+08:00  INFO 45824 --- [assignment] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-15T21:20:23.149+08:00  INFO 45824 --- [assignment] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 157 ms
+2026-11-15T21:20:23.167+08:00  INFO 45824 --- [assignment] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-15T21:20:23.189+08:00  INFO 45824 --- [assignment] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-15T21:20:23.190+08:00  INFO 45824 --- [assignment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2026-11-15T21:20:23.345+08:00  INFO 45824 --- [assignment] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-13 - Added connection ConnectionID:202 ClientConnectionId: 640d6152-33cd-46a0-94ef-fe566d3024ac
+2026-11-15T21:20:23.345+08:00  INFO 45824 --- [assignment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2026-11-15T21:20:23.380+08:00  WARN 45824 --- [assignment] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: SQLServerDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-15T21:20:23.381+08:00  INFO 45824 --- [assignment] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:sqlserver://localhost:1433;concatNullYieldsNull=ON;quotedIdentifier=ON;connectRetryInterval=10;connectRetryCount=1;maxResultBuffer=-1;sendTemporalDataTypesAsStringForBulkCopy=true;delayLoadingLobs=true;useFmtOnly=false;vectorTypeSupport=v1;cacheBulkCopyMetadata=false;bulkCopyForBatchInsertAllowEncryptedValueModifications=false;bulkCopyForBatchInsertTableLock=false;bulkCopyForBatchInsertKeepNulls=false;bulkCopyForBatchInsertKeepIdentity=false;bulkCopyForBatchInsertFireTriggers=false;bulkCopyForBatchInsertCheckConstraints=false;bulkCopyForBatchInsertBatchSize=0;useBulkCopyForBatchInsert=false;cancelQueryTimeout=-1;sslProtocol=TLS;calcBigDecimalPrecision=false;useDefaultJaasConfig=false;jaasConfigurationName=SQLJDBCDriver;statementPoolingCacheSize=0;serverPreparedStatementDiscardThreshold=10;enablePrepareOnFirstPreparedStatementCall=false;fips=false;socketTimeout=0;authentication=NotSpecified;authenticationScheme=nativeAuthentication;xopenStates=false;datetimeParameterType=datetime2;sendTimeAsDatetime=true;replication=false;trustStoreType=JKS;trustServerCertificate=true;TransparentNetworkIPResolution=true;iPAddressPreference=IPv4First;serverNameAsACE=false;sendStringParametersAsUnicode=true;selectMethod=direct;responseBuffering=adaptive;queryTimeout=-1;packetSize=8000;multiSubnetFailover=false;loginTimeout=30;lockTimeout=-1;lastUpdateCount=true;useDefaultGSSCredential=false;prepareMethod=prepexec;encrypt=true;disableStatementPooling=true;databaseName=TESTDB;columnEncryptionSetting=Disabled;applicationName=Microsoft JDBC Driver for SQL Server;applicationIntent=readwrite;]
+	Database driver: Microsoft JDBC Driver 13.4 for SQL Server
+	Database dialect: SQLServerDialect
+	Database version: 17.0
+	Default catalog/schema: TESTDB/dbo
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 128
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-15T21:20:23.407+08:00  INFO 45824 --- [assignment] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-15T21:20:23.764+08:00  INFO 45824 --- [assignment] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-15T21:20:23.828+08:00  WARN 45824 --- [assignment] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-11-15T21:20:23.887+08:00  INFO 45824 --- [assignment] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-11-15T21:20:23.890+08:00  INFO 45824 --- [assignment] [restartedMain] c.m.g.c.assigment.AssigmentApplication   : Started AssigmentApplication in 0.926 seconds (process running for 19233.63)
+2026-11-15T21:20:23.892+08:00  INFO 45824 --- [assignment] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-11-15T21:33:22.247+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-15T21:33:22.247+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-15T21:33:22.248+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-11-15T21:33:22.249+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-2] c.m.g.c.a.c.RequestResponseLoggingFilter : --> REQUEST: Method: POST, URI: /api/products
+2026-11-15T21:33:22.277+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-2] c.m.g.c.a.c.RequestResponseLoggingFilter : <-- RESPONSE: Status: 200
+2026-11-15T21:43:06.847+08:00  INFO 45824 --- [assignment] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-11-15T21:43:06.848+08:00  INFO 45824 --- [assignment] [Thread-51] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-15T21:43:06.895+08:00  INFO 45824 --- [assignment] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-11-15T21:43:06.896+08:00  INFO 45824 --- [assignment] [Thread-51] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-11-15T21:43:06.897+08:00  INFO 45824 --- [assignment] [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2026-11-15T21:43:06.898+08:00  INFO 45824 --- [assignment] [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2026-11-15T21:43:06.973+08:00  INFO 45824 --- [assignment] [restartedMain] c.m.g.c.assigment.AssigmentApplication   : Starting AssigmentApplication using Java 17.0.19 with PID 45824 (C:\Users\Mak Dev Env\product-backend\products\assigment\target\classes started by Mak Dev Env in C:\Users\Mak Dev Env\product-backend\products\assigment)
+2026-11-15T21:43:06.973+08:00  INFO 45824 --- [assignment] [restartedMain] c.m.g.c.assigment.AssigmentApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-11-15T21:43:07.049+08:00  INFO 45824 --- [assignment] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-15T21:43:07.056+08:00  INFO 45824 --- [assignment] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2026-11-15T21:43:07.097+08:00  INFO 45824 --- [assignment] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-11-15T21:43:07.097+08:00  INFO 45824 --- [assignment] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-15T21:43:07.097+08:00  INFO 45824 --- [assignment] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-15T21:43:07.112+08:00  INFO 45824 --- [assignment] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 137 ms
+2026-11-15T21:43:07.128+08:00  INFO 45824 --- [assignment] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-15T21:43:07.149+08:00  INFO 45824 --- [assignment] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-15T21:43:07.149+08:00  INFO 45824 --- [assignment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2026-11-15T21:43:07.278+08:00  INFO 45824 --- [assignment] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-14 - Added connection ConnectionID:212 ClientConnectionId: 130217b4-8101-4621-9be5-a25bde7f656c
+2026-11-15T21:43:07.279+08:00  INFO 45824 --- [assignment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2026-11-15T21:43:07.304+08:00  WARN 45824 --- [assignment] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: SQLServerDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-15T21:43:07.305+08:00  INFO 45824 --- [assignment] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:sqlserver://localhost:1433;concatNullYieldsNull=ON;quotedIdentifier=ON;connectRetryInterval=10;connectRetryCount=1;maxResultBuffer=-1;sendTemporalDataTypesAsStringForBulkCopy=true;delayLoadingLobs=true;useFmtOnly=false;vectorTypeSupport=v1;cacheBulkCopyMetadata=false;bulkCopyForBatchInsertAllowEncryptedValueModifications=false;bulkCopyForBatchInsertTableLock=false;bulkCopyForBatchInsertKeepNulls=false;bulkCopyForBatchInsertKeepIdentity=false;bulkCopyForBatchInsertFireTriggers=false;bulkCopyForBatchInsertCheckConstraints=false;bulkCopyForBatchInsertBatchSize=0;useBulkCopyForBatchInsert=false;cancelQueryTimeout=-1;sslProtocol=TLS;calcBigDecimalPrecision=false;useDefaultJaasConfig=false;jaasConfigurationName=SQLJDBCDriver;statementPoolingCacheSize=0;serverPreparedStatementDiscardThreshold=10;enablePrepareOnFirstPreparedStatementCall=false;fips=false;socketTimeout=0;authentication=NotSpecified;authenticationScheme=nativeAuthentication;xopenStates=false;datetimeParameterType=datetime2;sendTimeAsDatetime=true;replication=false;trustStoreType=JKS;trustServerCertificate=true;TransparentNetworkIPResolution=true;iPAddressPreference=IPv4First;serverNameAsACE=false;sendStringParametersAsUnicode=true;selectMethod=direct;responseBuffering=adaptive;queryTimeout=-1;packetSize=8000;multiSubnetFailover=false;loginTimeout=30;lockTimeout=-1;lastUpdateCount=true;useDefaultGSSCredential=false;prepareMethod=prepexec;encrypt=true;disableStatementPooling=true;databaseName=TESTDB;columnEncryptionSetting=Disabled;applicationName=Microsoft JDBC Driver for SQL Server;applicationIntent=readwrite;]
+	Database driver: Microsoft JDBC Driver 13.4 for SQL Server
+	Database dialect: SQLServerDialect
+	Database version: 17.0
+	Default catalog/schema: TESTDB/dbo
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 128
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-15T21:43:07.331+08:00  INFO 45824 --- [assignment] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-15T21:43:07.613+08:00  INFO 45824 --- [assignment] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-15T21:43:07.654+08:00  WARN 45824 --- [assignment] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-11-15T21:43:07.697+08:00  INFO 45824 --- [assignment] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-11-15T21:43:07.700+08:00  INFO 45824 --- [assignment] [restartedMain] c.m.g.c.assigment.AssigmentApplication   : Started AssigmentApplication in 0.744 seconds (process running for 20597.44)
+2026-11-15T21:43:07.701+08:00  INFO 45824 --- [assignment] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-11-15T21:46:47.965+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-15T21:46:47.965+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-15T21:46:47.965+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-11-15T21:46:47.965+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-2] c.m.g.c.a.c.RequestResponseLoggingFilter : --> REQUEST: Method: POST, URI: /api/products
+2026-11-15T21:46:47.985+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-2] c.m.g.c.a.c.RequestResponseLoggingFilter : <-- RESPONSE: Status: 201
+2026-11-15T21:47:45.066+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-4] c.m.g.c.a.c.RequestResponseLoggingFilter : --> REQUEST: Method: GET, URI: /api/products
+2026-11-15T21:47:45.090+08:00  WARN 45824 --- [assignment] [http-nio-8080-exec-4] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-11-15T21:47:45.094+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-4] c.m.g.c.a.c.RequestResponseLoggingFilter : <-- RESPONSE: Status: 200
+2026-11-15T21:47:45.098+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-5] c.m.g.c.a.c.RequestResponseLoggingFilter : --> REQUEST: Method: GET, URI: /api/products
+2026-11-15T21:47:45.107+08:00  INFO 45824 --- [assignment] [http-nio-8080-exec-5] c.m.g.c.a.c.RequestResponseLoggingFilter : <-- RESPONSE: Status: 200
+2026-11-15T21:49:26.669+08:00  INFO 45824 --- [assignment] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-11-15T21:49:26.669+08:00  INFO 45824 --- [assignment] [Thread-55] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-15T21:49:26.721+08:00  INFO 45824 --- [assignment] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-11-15T21:49:26.722+08:00  INFO 45824 --- [assignment] [Thread-55] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-11-15T21:49:26.722+08:00  INFO 45824 --- [assignment] [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2026-11-15T21:49:26.724+08:00  INFO 45824 --- [assignment] [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2026-11-15T21:49:26.794+08:00  INFO 45824 --- [assignment] [restartedMain] c.m.g.c.assigment.AssigmentApplication   : Starting AssigmentApplication using Java 17.0.19 with PID 45824 (C:\Users\Mak Dev Env\product-backend\products\assigment\target\classes started by Mak Dev Env in C:\Users\Mak Dev Env\product-backend\products\assigment)
+2026-11-15T21:49:26.795+08:00  INFO 45824 --- [assignment] [restartedMain] c.m.g.c.assigment.AssigmentApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-11-15T21:49:26.872+08:00  INFO 45824 --- [assignment] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-15T21:49:26.880+08:00  INFO 45824 --- [assignment] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2026-11-15T21:49:26.925+08:00  INFO 45824 --- [assignment] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-11-15T21:49:26.926+08:00  INFO 45824 --- [assignment] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-15T21:49:26.926+08:00  INFO 45824 --- [assignment] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-15T21:49:26.943+08:00  INFO 45824 --- [assignment] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 147 ms
+2026-11-15T21:49:26.962+08:00  INFO 45824 --- [assignment] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-15T21:49:26.986+08:00  INFO 45824 --- [assignment] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-15T21:49:26.987+08:00  INFO 45824 --- [assignment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2026-11-15T21:49:27.159+08:00  INFO 45824 --- [assignment] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-15 - Added connection ConnectionID:222 ClientConnectionId: 96a1a4b1-1386-489f-a460-3d4064746e37
+2026-11-15T21:49:27.159+08:00  INFO 45824 --- [assignment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2026-11-15T21:49:27.191+08:00  WARN 45824 --- [assignment] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: SQLServerDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-15T21:49:27.193+08:00  INFO 45824 --- [assignment] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:sqlserver://localhost:1433;concatNullYieldsNull=ON;quotedIdentifier=ON;connectRetryInterval=10;connectRetryCount=1;maxResultBuffer=-1;sendTemporalDataTypesAsStringForBulkCopy=true;delayLoadingLobs=true;useFmtOnly=false;vectorTypeSupport=v1;cacheBulkCopyMetadata=false;bulkCopyForBatchInsertAllowEncryptedValueModifications=false;bulkCopyForBatchInsertTableLock=false;bulkCopyForBatchInsertKeepNulls=false;bulkCopyForBatchInsertKeepIdentity=false;bulkCopyForBatchInsertFireTriggers=false;bulkCopyForBatchInsertCheckConstraints=false;bulkCopyForBatchInsertBatchSize=0;useBulkCopyForBatchInsert=false;cancelQueryTimeout=-1;sslProtocol=TLS;calcBigDecimalPrecision=false;useDefaultJaasConfig=false;jaasConfigurationName=SQLJDBCDriver;statementPoolingCacheSize=0;serverPreparedStatementDiscardThreshold=10;enablePrepareOnFirstPreparedStatementCall=false;fips=false;socketTimeout=0;authentication=NotSpecified;authenticationScheme=nativeAuthentication;xopenStates=false;datetimeParameterType=datetime2;sendTimeAsDatetime=true;replication=false;trustStoreType=JKS;trustServerCertificate=true;TransparentNetworkIPResolution=true;iPAddressPreference=IPv4First;serverNameAsACE=false;sendStringParametersAsUnicode=true;selectMethod=direct;responseBuffering=adaptive;queryTimeout=-1;packetSize=8000;multiSubnetFailover=false;loginTimeout=30;lockTimeout=-1;lastUpdateCount=true;useDefaultGSSCredential=false;prepareMethod=prepexec;encrypt=true;disableStatementPooling=true;databaseName=TESTDB;columnEncryptionSetting=Disabled;applicationName=Microsoft JDBC Driver for SQL Server;applicationIntent=readwrite;]
+	Database driver: Microsoft JDBC Driver 13.4 for SQL Server
+	Database dialect: SQLServerDialect
+	Database version: 17.0
+	Default catalog/schema: TESTDB/dbo
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 128
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-15T21:49:27.223+08:00  INFO 45824 --- [assignment] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-15T21:49:27.525+08:00  INFO 45824 --- [assignment] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-15T21:49:27.570+08:00  WARN 45824 --- [assignment] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-11-15T21:49:27.613+08:00  INFO 45824 --- [assignment] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-11-15T21:49:27.614+08:00  INFO 45824 --- [assignment] [restartedMain] c.m.g.c.assigment.AssigmentApplication   : Started AssigmentApplication in 0.837 seconds (process running for 20977.354)
+2026-11-15T21:49:27.615+08:00  INFO 45824 --- [assignment] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
